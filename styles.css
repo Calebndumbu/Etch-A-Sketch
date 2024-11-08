@@ -1,22 +1,22 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 #container {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
-  width: 400;
-  height: 400;
-  border: 1px solid #000;
+  max-width: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-.square {
-  flex: 0 0 25%;
-  height: 25%;
-  border: 1px solid #ddd;
+.block {
   box-sizing: border-box;
 }
+
+.hovered {
+  background: rgb(0, 0, 0, 0.5);
+}
+/* 
+.colored {
+  background: red;
+} */
